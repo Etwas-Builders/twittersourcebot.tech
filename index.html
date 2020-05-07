@@ -18,10 +18,24 @@
     /></noscript>
   </head>
   <body class="is-preload">
+    <style>
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
-      <header id="header" class="alt">
+      <header id="header" class="alt" style="padding-bottom: 15%;">
         <span class="logo"
           ><img src="images/botIcon.png" alt="bot Icon"
         /></span>
@@ -54,41 +68,41 @@
         </p>
       </header>
 
-      <!-- Nav
+      <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li><a href="#intro" class="active">Introduction</a></li>
-          <li><a href="#first">First Section</a></li>
-          <li><a href="#second">Second Section</a></li>
+          <li><a href="#intro" class="active">Demo</a></li>
+          <!-- <li><a href="#first">First Section</a></li>
+          <li><a href="#second">Second Section</a></li> -->
           <li><a href="#cta">Get Started</a></li>
         </ul>
       </nav>
 
       <!-- Main -->
-      <!--     <div id="main">
+      <div id="main">
         <!-- Introduction -->
-      <!--     <section id="intro" class="main">
+        <section id="intro" class="main">
           <div class="spotlight">
             <div class="content">
               <header class="major">
-                <h2>Ipsum sed adipiscing</h2>
+                <h2>Product Demo</h2>
               </header>
-              <p>
-                Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                consequat magna adipiscing magna etiam amet veroeros. Lorem
-                ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum
-                dolor sit amet aliquam.
-              </p>
-              <ul class="actions">
-                <li><a href="generic.html" class="button">Learn More</a></li>
-              </ul>
+              <div class="videoWrapper">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/cOBFugSMIcM"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-            <span class="image"><img src="images/pic01.jpg" alt="" /></span>
           </div>
         </section>
 
         <!-- First Section -->
-      <!--    <section id="first" class="main special">
+        <!--    <section id="first" class="main special">
           <header class="major">
             <h2>Magna veroeros</h2>
           </header>
@@ -126,7 +140,7 @@
         </section>
 
         <!-- Second Section -->
-      <!--   <section id="second" class="main special">
+        <!--   <section id="second" class="main special">
           <header class="major">
             <h2>Ipsum consequat</h2>
             <p>
@@ -176,24 +190,74 @@
         </section>
 
         <!-- Get Started -->
-      <!--   <section id="cta" class="main special">
+        <section id="cta" class="main special">
           <header class="major">
-            <h2>Congue imperdiet</h2>
+            <h2>Get Started</h2>
             <p>
-              Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-              posuere. Nulla massa urna, fermentum eget quam aliquet.
+              1. Find a tweet you want to find the source of information for
+            </p>
+            <p>
+              2. Mention our bot @whosaidthis_bot while replying to the tweet
+            </p>
+            <p>
+              3. We will reply back with the source of the information if we can
+              find it.
             </p>
           </header>
           <footer class="major">
             <ul class="actions special">
               <li>
-                <a href="generic.html" class="button primary">Get Started</a>
+                <!-- <a
+                  href="https://ctt.ac/1ahBK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button primary"
+                  >Get Started</a
+                > -->
+                <a
+                  href="https://twitter.com/intent/tweet?screen_name=whosaidthis_bot&ref_src=twsrc%5Etfw"
+                  class="twitter-mention-button"
+                  data-size="large"
+                  data-text="The curve is slowing but I don&#39;t know how long the coronavirus crises will continue. Life will be difficult for quite some time to come."
+                  data-show-screen-name="false"
+                  data-show-count="false"
+                  >Tweet to @whosaidthis_bot</a
+                >
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
               </li>
-              <li><a href="generic.html" class="button">Learn More</a></li>
+              <li>
+                <a
+                  href="https://twitter.com/whosaidthis_bot?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button"
+                  data-size="large"
+                  data-show-screen-name="false"
+                  data-show-count="false"
+                  >Follow @whosaidthis_bot</a
+                >
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </li>
             </ul>
           </footer>
         </section>
-      </div> -->
+      </div>
 
       <!-- Footer -->
       <footer id="footer" style="padding-top: 20%;">
